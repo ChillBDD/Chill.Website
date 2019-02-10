@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Liquid Projections"
+title                    : "Chill"
 title_separator          : "-"
 name                     : "Dennis Doomen"
-description              : "Liquid Projections supports building and maintaining autonomous .NET projection code in an Event Sourcing architecture."
-url                      : "http://www.liquidprojections.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "A BDD style testing framework that helps you to write better unit tests."
+url                      : "https://chillbdd.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "liquidprojections/liquidprojections" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/fluentassertions2.png"
+repository               : "ChillBDD/Chill" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : ""
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -92,7 +92,7 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-6371995-3
+    tracking_id          : UA-6371995-4
 
 
 # Site Author
@@ -110,7 +110,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "liquidprojections"
+  github           : "chillbdd"
   gitlab           :
   google_plus      :
   keybase          :

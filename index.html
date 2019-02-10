@@ -1,59 +1,63 @@
 ---
-title: "Liquid Projections"
+title: "Chill"
 layout: splash
 date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#373737"
   overlay_filter: "0.7"
-  overlay_image: "/assets/images/liquidprojections.svg"
-  cta_label: "Get them from NuGet now!"
-  cta_url: "https://www.nuget.org/packages?q=liquidprojections"
+  overlay_image: "/assets/images/logo.svg"
+  cta_label: "Get Chill from NuGet now!"
+  cta_url: "https://www.nuget.org/packages/Chill"
   caption: "Logo by [**Ben Palmer**](https://github.com/IUsername) <br/>Icons  by [**Zlatko Najdenovski**](https://www.flaticon.com/authors/zlatko-najdenovski) from [Flaticon](https://www.flaticon.com/)"
-excerpt: 'A set of highly efficient building blocks to build fast autonomous synchronous and asynchronous projectors.<br/>
- <br /> 
-[![](https://img.shields.io/github/release/liquidprojections/liquidprojections.svg?style=for-the-badge&label=Core, Testing, Owin)](https://github.com/liquidprojections/liquidprojections/releases/latest)
-[![](https://img.shields.io/github/release/liquidprojections/liquidprojections.PollingEventStore.svg?style=for-the-badge&label=PollingEventStore)](https://github.com/liquidprojections/liquidprojections.PollingEventStore/releases/latest)
-[![](https://img.shields.io/github/release/liquidprojections/liquidprojections.NHibernate.svg?style=for-the-badge&label=NHibernate)](https://github.com/liquidprojections/liquidprojections.NHibernate/releases/latest)
-[![](https://img.shields.io/github/release/liquidprojections/liquidprojections.RavenDB.svg?style=for-the-badge&label=RavenDB)](https://github.com/liquidprojections/liquidprojections.RavenDB/releases/latest)
-[![](https://img.shields.io/github/release/liquidprojections/liquidprojections.NEventStore.svg?style=for-the-badge&label=NEventStore)](https://github.com/liquidprojections/liquidprojections.NEventStore/releases/latest)
+excerpt: 'A BDD style testing framework that helps you write better unit tests.<br/>
+_If you stick it in a container, Chill will keep it cool._
+ <br /> <br/>
+![](https://img.shields.io/nuget/dt/Chill.svg?style=for-the-badge)
+[![](https://img.shields.io/github/release/ChillBDD/Chill.svg?style=for-the-badge&label=Latest)](https://github.com/ChillBDD/Chill/releases/latest)
+[![](https://img.shields.io/github/stars/ChillBDD/Chill.svg?style=for-the-badge&label=Star)](https://github.com/ChillBDD/Chill/stargazers)
+[![](https://img.shields.io/github/forks/ChillBDD/Chill.svg?style=for-the-badge&label=Fork)](https://github.com/ChillBDD/Chill/fork)
+![](https://img.shields.io/badge/release%20strategy-gitflow-orange.svg?style=for-the-badge)
 '
 intro: 
   - excerpt: '
-     [Follow me <i class="fab fa-twitter"></i> @ddoomen](https://twitter.com/ddoomen){: .btn .btn--twitter} 
+   [Follow me <i class="fab fa-twitter"></i> @ddoomen](https://twitter.com/ddoomen){: .btn .btn--twitter} 
+     [<i class="fab fa-paypal"></i> Tip Us](https://paypal.me/fluentassertions){: .btn .btn--paypal}
+     [<i class="fab fa-patreon"></i> Sponser Us](https://www.patreon.com/bePatron?u=9250052&redirect_uri=http%3A%2F%2Ffluentassertions.com%2F&utm_medium=widget){: .btn .btn--patreon}
+     [<i class="fas fa-money-check"></i> Wire Us](mailto:dennis.doomen@avivasolutions.nl?subject=Support%20Fluent%20Assertions){: .btn .btn--rabobank}
      <br/>
-     Liquid Projections is a set of highly efficient building blocks that each provide value on their own, but shine when used together to build synchronous and asynchronous projectors. '
+     A BDD style testing framework that helps you to write better unit tests. '
 feature_row:
-  - title: "Designed as a Library"
+  - title: "Promotes intention-revealing tests"
+    image_path: /assets/images/eraser.svg
+    excerpt: "By adopting terms like **Given**, **When** and **Then**, properties like `Subject`, `Result` and APIs like `UseThe()` and `The()`, Chill keeps your tests clean and readable."
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+    url: "/documentation/#before-and-after"
+  - title: "Auto-mocking without pain"
     image_path: /assets/images/brick.svg
-    excerpt: "Designed as a set of unopiniated reusable building blocks that each solve specific problems, but can be used together in any way you want."
+    excerpt: "Build your own implementation of `IObjectMother` and allow Chill to create the test objects you need. Or use the officially supported plug-ins."
     btn_label: "Read More"
     btn_class: "btn--primary"
-    url: "/about/#principles-of-successful-libraries"
-  - title: "Storage Agnostic"
-    image_path: /assets/images/servers.svg
-    excerpt: "Supports NEventStore, RavenDB and NHibernate through auxiliary packages, but is designed to be connected to any kind of storage."
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    url: "/getting-started/#connecting-your-projectors-to-an-event-store"
-  - title: "Promotes Autonomy"
+    url: "/documentation/#object-mothers-aka-auto-mocking"
+  - title: "First-Class Asynchronous Support"
     image_path: /assets/images/renewable-energy.svg
-    excerpt: 'Promotes the idea of autonomous projectors that decide what data to project, where to persist that data, and when to rebuild.'
+    excerpt: "Whether your Givens and Whens are using `async` and `await` or not, either one or all, Chill got you covered and will handle this as you expect."
     btn_label: "Read More"
     btn_class: "btn--primary"
-    url: "/about/#characteristics-of-a-great-projector"
+    url: "/documentation/#asynchronous-testing"
 feature_row2:
-  - title: "Captures Years of Experience"
-    image_path: /assets/images/professor.svg
-    excerpt: 'Is the culmination of years of experience with building distributed and occassionly-disconnected Event Sourced systems'
+  - title: "Any Test Framework, Any Platform"
+    image_path: /assets/images/servers.svg
+    excerpt: "Works with any platform targeting .NET Standard 1.1 or 2.0 and any unit testing framework that supports `IDisposable`."
+  - title: "Cleans up all your disposable objects"
+    image_path: /assets/images/garbage.svg
+    excerpt: "Does your `Subject` or any of your test objects created using `The` implement `IDisposable`. Chill will clean-up after you."
+  - title: "Extensible & Flexible"
+    image_path: /assets/images/puzzle.svg
+    excerpt: "You want to use your own IoC container or mocking library? We got you covered"
     btn_label: "Read More"
     btn_class: "btn--primary"
-    url: "https://www.continuousimprover.com/2017/11/event-sourcing-good-bad-and-ugly.html"
-  - title: "Battle Tested in Production"
-    image_path: /assets/images/tank.svg
-    excerpt: "We've been running and improving Liquid Projections since December 2016 in globally deployed enterprise-class systems."
-  - title: "Designed for Extensibility"
-    image_path: /assets/images/puzzle.svg
-    excerpt: "Because the underlying design relies on abstractions and avoids inheritance, it's relatively easy to reuse, extend and adopt."
+    url: "/documentation/#extensibility"
 ---
 
 {% include feature_row %}

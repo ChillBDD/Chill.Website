@@ -1,6 +1,6 @@
 # How to contribute 
 
-The Fluent Assertions [landing page](https://fluentassertions.com) is using Jekyll and Github Pages.
+The Chill [landing page](https://chillbdd.com) is using Jekyll and Github Pages.
 
 ## How to Build this Site
 
